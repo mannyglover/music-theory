@@ -43,7 +43,7 @@ Or, with numbers:
 
 [IDEA: make a new music notation system, and write code to convert music in the traditional system (e.g., they have XML versions of a music score) into your new system.  Then, if any fellow musicians wanted to try your new notaion system on one of their favorite pieces of music, they could easily do so.]
 
-Now, of course, "if it ain't broke, don't fix it", so I see no reason to change the system of notation that denotes the note's duration.  So, here's another example, but with asterisks (*) representing the notes (let's say they are quarter notes):
+Now, of course, "if it ain't broke, don't fix it", so I see no reason to change the system of notation that denotes the note's duration.  So, here's another example, but with asterisks (\*) representing the notes (let's say they are quarter notes):
 ```
                                                                                     --------*--
                                                                                         *
@@ -61,4 +61,22 @@ Now, of course, "if it ain't broke, don't fix it", so I see no reason to change 
    |          *               |                       |                       |
 ---|-----*--------------------|-----------------------|-----------------------|-------------------------------------------------
 ```
+
 [IDEA: have a "markdown" for music notation.  In other words, make a notation software where the ascii file specifying the music is also human-readable.]
+
+Now, here's an example where we go up the C major scale
+```                                                                                        
+                                           --------*-----|
+                                              *          |                      
+---|--------------------------|--------------------------|-----------------------|-------------------------------------------------
+   |                          |          *               |                       |
+---|--------------------------|--------------------------|-----------------------|-------------------------------------------------
+   |                          |     *                    |                       |
+---|--------------------------|--------------------------|-----------------------|-------------------------------------------------
+   |                    *     |                          |                       |
+---|---------------*----------|--------------------------|-----------------------|-------------------------------------------------
+   |                          |                          |                       |
+---|----------*---------------|--------------------------|-----------------------|-------------------------------------------------
+   |                          |                          |                       |
+---|-----*--------------------|--------------------------|-----------------------|-------------------------------------------------
+```
