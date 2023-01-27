@@ -1,7 +1,9 @@
 # music-theory
 Here's where I will discuss some of my ideas on music theory, as well as attempt to write code that illustrates different aspects of music theory.
 
-# First thoughts: why does standard music notation not have everything spaced apart by semi-tones?
+# 2023-01-26 {
+
+# First thoughts: why does standard music notation not have everything spaced apart by semi-tones? (0)
 The first response will be, "Because we don't typically play atonal music: usually we take 7 or so of possible 12 semitones, so it makes sense that this would be integrated into the notation so that a pianist (for example) can more easily see which of the 7 possible semitones (and at what octave) they must hit on the keyboard."  But the reason I have thought that a lines-spaced-by-semitones notation system is better is because the musician, whether a singer or an instrumentalist, will always know the exact intervals between any two notes, at a glance.  As a long-time choral ensemble member, I have often struggled to sight read.  I know the difference between going up a semitone or two semitones, but when there is a "whole step" up or down in the scale, I don't know whether it's one or two semitones.  Of course, there are systems that address these problems, like do-re-mi-fa-so-la-ti-do, but whenever a song has accidentals, it puts a wrench into the gear of that system.  There are remedies, like doing "ri" instead of "re" when it's sharpened, and "ra" instead of "re" when it's flattened, but to, at a glance, know the interval between "ri" and "so" is not something that I think is easy.  So instead of "do-re-me-fa-so-la-ti-do" I propose "zer-one-two-three-four-five-six-se'en-eight-nine-ten-'le'en-twelve-thirt" or "0-1-2-3-4-5-6-7-8-9-10-11-12-13".  Having 0 as the root note instead of 1 has the advantage that you can have negative number versions of all the "sols": "none-nwo-nree-nour-nive-nix-ne'en-neight-nene-nen-n'le'en" (clearly, the negative number versions are not as readable as the positive number versions, but the system works very well without using any negative numbers).
 
 So if we are dealing with numbers instead of "words" (whatever you would call "do", "re", "mi", etc), and we want to be able to gauge the intervals by simple subtraction, we would want a notation system where each "up" equals up one semitone and each "down" equals down one semitone.  I will give a rudimentary visualization of this system here, rather than trying to whip something up on Google Draw, for example.
@@ -80,3 +82,16 @@ Now, here's an example where we go up the C major scale
    |                          |                          |                       |
 ---|-----*--------------------|--------------------------|-----------------------|-------------------------------------------------
 ```
+## 2023-01-27 {
+# First thoughts: why does standard music notation not have everything spaced apart by semi-tones? (1)
+## Andrew's Lego song, in my new notation system
+Today, I'm going to try to articulate Andrew's Lego song in my new notation.  Before I do that, I am tempted to write a little Python program to convert from a list of 2D tuples--where each 2D tuple consists of a note (e.g., "C#") and a duration (e.g., "2" for a half note, "4" for a quarter note, etc).  Before I begin to write such a program, I will think out loud about what the program should output and how.
+
+* The program should be able to handle all durations, from a whole note to a sixty fourth note.
+    * The program should allow spaces between each note, at least up until thirty second notes.
+        * It may be okay to have no spaces between sixty fourth notes.
+
+[INTERJECTION: As my right wrist/hand are hurting when I type, I shall continue thinking out loud about this with old fashioned pen and paper.]
+
+## 2023-01-27 }
+# 2023-01-26 }
